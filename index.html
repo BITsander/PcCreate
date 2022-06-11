@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Pc-create</title>
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+   <link rel="stylesheet" href="css/bootstrap.min.css">
+   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+   <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+   <header id="header"  class="header" >
+      <nav data-aos="fade-down" data-aos-delay="500" data-aos-duration="1000" class="nav bg-transparent navbar navbar-expand-lg  navbar-light bg-light">
+         <div class="container menu">
+           <a class="navbar-brand" href="#"><img src="image/logo.svg" alt=""></a>
+           <button class="navbar-toggler menu__toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+             <span class="navbar-toggler-icon"></span>
+           </button>
+           <div class="collapse navbar-collapse menu-collapse" id="navbarTogglerDemo02">
+             <ul class="menu__nav navbar-nav me-auto mb-2 mb-lg-0">
+               <li class="nav-item">
+                 <a class="nav-link menu__nav-link text-white" aria-current="page" href="#header">Главная</a>
+               </li>
+               <li class="nav-item">
+                  <a class="menu__nav-link nav-link text-white" aria-current="page" href="#">Курсы</a>
+                </li>
+               <li class="nav-item">
+                 <a class="menu__nav-link nav-link text-white" aria-current="page" href="#">Расписание</a>
+               </li>
+               <li class="nav-item">
+                 <a class="menu__nav-link nav-link text-white" aria-current="page" href="#teachers">Преподаватели</a>
+               </li>
+               <li class="nav-item">
+                 <a class="menu__nav-link nav-link text-white" aria-current="page" href="#">Рассылка</a>
+               </li>
+               <li class="nav-item">
+                 <a class="menu__nav-link nav-link  text-white" aria-current="page" href="#footer">Контакты</a>
+               </li>
+             </ul>
+             <button type="button" class="menu__button btn button">Войти в кабинет</button>
+           </div>
+         </div>
+      </nav>
+      <section class="header__content content-header">
+        <div class="container">
+          <div class="row">
+              <div class="col-sm-12 text-center col-md-7 text-md-start"> 
+                <h2 data-aos="fade-down" data-aos-delay="1500" data-aos-duration="2500" class="content-header__title">Первый курс по компьютерной сборке</h2> 
+              </div>
+          </div>
+          <div data-aos="fade-down" data-aos-delay="2500" data-aos-duration="2500"  class="row">
+              <div class="col-12 col-lg-7">
+                <div class="content-header__clock">
+                  <div id="countdown" class="countdown">
+                    <div class="countdown-number">
+                      <span class="days countdown-time"></span>
+                      <span class="countdown-text">Days</span>
+                    </div>
+                    <div class="countdown-number">
+                      <span class="hours countdown-time"></span>
+                      <span class="countdown-text">Hours</span>
+                    </div>
+                    <div class="countdown-number">
+                      <span class="minutes countdown-time"></span>
+                      <span class="countdown-text">Minutes</span>
+                    </div>
+                    <div class="countdown-number">
+                      <span class="seconds countdown-time"></span>
+                      <span class="countdown-text">Seconds</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+          </div>
+        </div>
+        <div class="content-header__info info-header">
+          <div class="container">
+            <div class="row align-items-center">
+              <div class="col-sm-6 col-xl-3">
+                <button type="button" class="info-header__button button-gr btn button">Заказать курс</button>
+              </div>
+              <div class="col-sm-6 col-xl-3 px-xxl-4">
+                <div class="info-header__students d-flex justify-content-between">
+                  Учеников всего:<span class="d-inline-block">200</span>
+                </div>
+                <div class="info-header__students d-flex justify-content-between">
+                  Успешно закончили курс:<span class="d-inline-block">190</span>
+                </div>             
+              </div>
+              <div class="col-sm-12 col-xl-6 pe-1">
+                <div class="info-header__students d-flex justify-content-between">
+                  Заработано учениками:<span class="d-inline-block">400 000₽</span>
+                </div>
+                <div class="info-header__progress progress">
+                  <div class="progress-bar"></div>
+                </div>
+                <div class="pt-1 progress__values d-flex justify-content-between">
+                  <span class="d-inline-block">0</span>
+                  <span class="d-inline-block">1 000 000₽</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+   </header>
+  <div class="wrapper" >
+    <section class="doing">
+      <div class="container">
+        <div class="row">
+          <div class="col-12 col-md-5">
+            <div class="doing__image position-relative">
+              <img src="image/pc.png" data-aos="fade-down" data-aos-delay="700" data-aos-duration="1500" alt="Компьютер" class="img-fluid">
+            </div>
+          </div>
+          <div class="col-12 col-md-6 offset-md-1">
+            <div data-aos="fade-right" data-aos-duration="1500" class="doing__content content-doing">
+              <h2 class="content-doing__title">Чем мы занимаемся?</h2>
+              <div class="content-doing__text">
+               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Eget neque, dignissim et feugiat elit augue in suspendisse egestas. Dictum vestibulum mi et sed nunc, orci fermentum vestibulum, morbi. Et neque, adipiscing sapien sem senectus praesent aenean consequat. Aenean facilisi turpis aliquet fringilla. Nunc sem felis sed interdum feugiat mattis elit, sollicitudin. Quam pharetra rhoncus risus, cursus id elementum aliquet. Nullam turpis arcu malesuada arcu interdum placerat nisi, lobortis. 
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="start">
+      <div class="container">
+        <div data-aos-delay="300" data-aos="fade-right" data-aos-duration="1500" class="row title-block">
+          <div class="col-2 pe-1 px-sm-0 col-sm-1">
+            <div class="start__icon title-block__icon">
+              <img class="img-fluid" src="image/icon-title.png" alt="">
+            </div>
+          </div>
+          <div class="col-10 col-sm-11">
+            <h2 class="start__title title-block__text">Быстрый старт</h2>
+          </div>
+        </div>
+        <div class="row">
+          <div data-aos-duration="1500" data-aos-delay="300" data-aos="fade-down" class="col-12 col-lg-4 start__subtittle">
+            Больше 90% учеников прошли полный курс и смогли собрать свой первый компьютер
+          </div>
+          <div data-aos-duration="1500" data-aos="zoom-in" data-aos-delay="300" data-aos-duration="500" class="start__content content-start">
+            <div class="row">
+              <div class="col-12 pb-2 pe-md-0 col-md-3">
+                <div class="content-start__title pb-md-2">
+                  100%
+                </div> 
+                <div class="content-start__fig content-start__fig1"></div>
+                <div class="content-start__text pt-md-3 pe-4">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Netus eget velit quisque accumsan amet tortor. Velit, volutpat egestas fringilla mi porttitor tempus. Placerat dui.
+                </div>
+              </div>
+              <div class="col-12 pb-2 px-md-0 col-md-3">
+                <div class="content-start__title pb-md-2">
+                  75%
+                </div> 
+                <div class="content-start__fig content-start__fig2"></div>
+                <div class="content-start__text pe-4 pt-md-3">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Netus eget velit quisque accumsan amet tortor. Velit, volutpat egestas fringilla mi porttitor tempus. Placerat dui.
+                </div>
+              </div>
+              <div class="col-12 pb-2 px-md-0 col-md-3 ">
+                <div class="content-start__title pb-md-2">
+                  50%
+                </div> 
+                <div class="content-start__fig content-start__fig3"></div>
+                <div class="content-start__text pt-md-3 pe-4">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Netus eget velit quisque accumsan amet tortor. Velit, volutpat egestas fringilla mi porttitor tempus. Placerat dui.
+                </div>
+              </div>
+              <div class="col-12 ps-md-0 col-md-3">
+                <div class="content-start__title pb-md-2">
+                  Итого
+                </div> 
+                <div class="content-start__fig content-start__fig4"></div>
+                <div class="content-start__text pt-md-3  pe-4">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Netus eget velit quisque accumsan amet tortor. Velit, volutpat egestas fringilla mi porttitor tempus. Placerat dui.
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <sections class="advantages">
+      <div class="container">
+        <div class="row">
+          <h2 data-aos="fade-down" data-aos-duration="1500" data-aos-delay="300" class="advantages__title text-center">
+            Получите профессию прямо сейчас
+          </h2>
+        </div>
+        <div data-aos="zoom-in" data-aos-delay="500" data-aos-duration="1500" class="row advantages__cards text-center">
+          <div class="col-12 col-md-6 col-lg-4 advantages__card card-advantages">
+            <div class="card-advantages__icon">
+              <img src="image/advantages/icon-1.png" class="img-fluid"  alt="Логотип карточки">
+            </div>
+            <h5 class="card-advantages__title">
+              Только практические навыки в работе
+            </h5>
+            <div class="card-advantages__text">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Netus eget velit quisque accumsan amet tortor. Velit, volutpat egestas fringilla mi porttitor tempus. Placerat dui.
+            </div>
+          </div>
+          <div class="col-12 col-md-6 col-lg-4 advantages__card card-advantages">
+            <div class="card-advantages__icon">
+              <img src="image/advantages/icon-2.png" class="img-fluid"  alt="Логотип карточки">
+            </div>
+            <h5 class="card-advantages__title">
+              Работа на самом современном оборудовании
+            </h5>
+            <div class="card-advantages__text">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Netus eget velit quisque accumsan amet tortor. Velit, volutpat egestas fringilla mi porttitor tempus. Placerat dui.
+            </div>
+          </div>
+          <div class="col-12 col-md-6 col-lg-4 advantages__card card-advantages">
+            <div class="card-advantages__icon">
+              <img src="image/advantages/icon-3.png" class="img-fluid"  alt="Логотип карточки">
+            </div>
+            <h5 class="card-advantages__title">
+              Сертификация по окончании обучения
+            </h5>
+            <div class="card-advantages__text">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Netus eget velit quisque accumsan amet tortor. Velit, volutpat egestas fringilla mi porttitor tempus. Placerat dui.
+            </div>
+          </div>
+        </div>
+      </div>
+    </sections>
+    <sections class="partners">
+      <div class="container">
+        <div class="row title-block">
+          <div class="col-2 pe-1 px-sm-0 col-sm-1">
+            <div class="title-block__icon">
+              <img class="img-fluid" src="image/icon-title.png" alt="">
+            </div>
+          </div>
+          <div class="col-10 col-sm-11">
+            <h2 class="title-block__text">Партнеры - топовые бренды</h2>
+          </div>
+        </div>
+
+        <div class="row position-relative">
+          <div class="col-4 col-sm-3 partners__item justify-content-center align-items-center">
+            <img src="image/partners/logo.png" alt="Логотип компании-партнёра" class="img-fluid">
+          </div>
+          <div class="col-4 col-sm-3 partners__item justify-content-center align-items-center">
+            <img src="image/partners/logo.png" alt="Логотип компании-партнёра" class="img-fluid">
+          </div>
+          <div class="col-4 col-sm-3 partners__item justify-content-center align-items-center">
+            <img src="image/partners/logo.png" alt="Логотип компании-партнёра" class="img-fluid">
+          </div>
+          <div class="col-4 col-sm-3 partners__item justify-content-center align-items-center">
+            <img src="image/partners/logo.png" alt="Логотип компании-партнёра" class="img-fluid">
+          </div>
+          <div class="col-4 col-sm-3 partners__item justify-content-center align-items-center">
+            <img src="image/partners/logo.png" alt="Логотип компании-партнёра" class="img-fluid">
+          </div>
+          <div class="col-4 col-sm-3 partners__item justify-content-center align-items-center">
+            <img src="image/partners/logo.png" alt="Логотип компании-партнёра" class="img-fluid">
+          </div>
+          <div class="col-4 col-sm-3 partners__item justify-content-center align-items-center">
+            <img src="image/partners/logo.png" alt="Логотип компании-партнёра" class="img-fluid">
+          </div>
+          <div class="col-4 col-sm-3 partners__item justify-content-center align-items-center">
+            <img src="image/partners/logo.png" alt="Логотип компании-партнёра" class="img-fluid">
+          </div>
+          <div class="partners__line position-absolute"></div>
+          <div class="partners__line partners__line2 partners__line-90 position-absolute"></div>
+          <div class="partners__line partners__line-90 partners__line3 position-absolute"></div>
+          <div class="partners__line partners__line-90 partners__line4 position-absolute"></div>
+        </div>
+      </div>
+    </sections>
+    <section class="program">
+      <div class="container">
+        <div data-aos="fade-down" data-aos-duration="1500" data-aos-delay="300"  class="row text-center">
+          <div class="col-12">
+            <div class="title-block__icon">
+              <img class="img-fluid" src="image/icon-title.png" alt="">
+            </div>
+          </div>
+          <div class="col-12">
+            <h2 class="title-block__text ps-0 pb-3">Программа обучения</h2>
+          </div>
+        </div>
+        <div data-aos="fade-up" data-aos-duration="1500" data-aos-delay="500"  class="program__subtitle text-center">
+            Больше 90% учеников прошли полный курс и смогли собрать свой первый компьютер
+        </div>
+        <div class="program-wood">
+          <div data-aos="fade-down" data-aos-delay="300" data-aos-duration="1500" class="program-wood__item item-wood item-left">
+            <div class="item-wood__uptitle">Неделя №1</div>
+            <div class="item-wood__title">Красивая часть курса, которая помогает в успехе</div>
+          </div>
+          <div data-aos="fade-down" data-aos-delay="500" data-aos-duration="1500"  class="program-wood__item item-wood item-right">
+            <div class="item-wood__uptitle">Неделя №2</div>
+            <div class="item-wood__title">Красивая часть курса, которая помогает в успехе</div>
+          </div>
+          <div data-aos="fade-down" data-aos-delay="700" data-aos-duration="1500"  class="program-wood__item item-wood item-left">
+            <div class="item-wood__uptitle">Неделя №3</div>
+            <div class="item-wood__title">Красивая часть курса, которая помогает в успехе</div>
+          </div>
+          <div data-aos="fade-down" data-aos-delay="900" data-aos-duration="1500"  class="program-wood__item item-wood item-right">
+            <div class="item-wood__uptitle">Неделя №4</div>
+            <div class="item-wood__title">Красивая часть курса, которая помогает в успехе</div>
+          </div>
+          <div data-aos="fade-down" data-aos-delay="1100" data-aos-duration="1500"  class="program-wood__item item-wood item-left">
+            <div class="item-wood__uptitle">Неделя №5</div>
+            <div class="item-wood__title">Красивая часть курса, которая помогает в успехе</div>
+          </div>
+          <div data-aos="fade-down" data-aos-delay="1300" data-aos-duration="1500"  class="program-wood__item item-wood item-right">
+            <div class="item-wood__uptitle">Неделя №6</div>
+            <div class="item-wood__title">Красивая часть курса, которая помогает в успехе</div>
+          </div>
+          <div data-aos="fade-down" data-aos-delay="1500" data-aos-duration="1500"  class="program-wood__item item-wood item-left">
+            <div class="item-wood__uptitle">Неделя №7</div>
+            <div class="item-wood__title">Красивая часть курса, которая помогает в успехе</div>
+          </div>
+        </div>
+    </section>
+    <section id="teachers"  class="teachers">
+      <div class="container">
+        <div class="row title-block">
+          <div class="col-2 pe-1 px-sm-0 col-sm-1">
+            <div class="teachers__icon title-block__icon">
+              <img class="img-fluid" src="image/icon-title.png" alt="">
+            </div>
+          </div>
+          <div class="col-10 col-sm-11">
+            <h2 class="teachers__title title-block__text">Ваши преподаватели</h2>
+          </div>
+        </div>
+        <div class="row teachers__cards text-center">
+          <div class="col-12 col-sm-6 col-md-4  teachers__card card-teachers">
+            <div class="card-teachers__img">
+              <img src="image/teachers/img-1.png" alt="Фото преподавателя" class="img-fluid">
+            </div>
+            <div class="card-teachers__title">
+              Дмитрий Иванов
+            </div>
+            <div class="card-teachers__subtitle">
+              Специалист по видеокартам
+            </div>
+            <a href="" class="btn card-teachers__btn">
+              Биография
+            </a>
+          </div>
+          <div class="col-12 col-sm-6 col-md-4   teachers__card card-teachers">
+            <div class="card-teachers__img">
+              <img src="image/teachers/img-2.png" alt="Фото преподавателя" class="img-fluid">
+            </div>
+            <div class="card-teachers__title">
+              Дмитрий Иванов
+            </div>
+            <div class="card-teachers__subtitle">
+              Специалист по видеокартам
+            </div>
+            <a href="" class="btn card-teachers__btn">
+              Биография
+            </a>
+          </div>
+          <div class="col-12 col-sm-6 col-md-4   teachers__card card-teachers">
+            <div class="card-teachers__img">
+              <img src="image/teachers/img-3.png" alt="Фото преподавателя" class="img-fluid">
+            </div>
+            <div class="card-teachers__title">
+              Дмитрий Иванов
+            </div>
+            <div class="card-teachers__subtitle">
+              Специалист по видеокартам
+            </div>
+            <a href="" class="btn card-teachers__btn">
+              Биография
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer id="footer" class="footer text-center">
+      <div class="container">
+        <h2 class="footer__title">
+          Статьи каждую неделю
+        </h2>
+        <div class="footer__subtitle">
+          Больше 90% учеников прошли полный курс и смогли собрать свой первый компьютер
+        </div>
+        <form action="">
+          <input type="email" class="footer__email" placeholder="Email">
+          <input type="submit" class="footer__btn" value="Подписаться">
+        </form>
+        <div class="footer__links">
+          <a href="#" class="footer__link">
+            <img src="image/footer/vk.png" alt="Вконтакте">
+          </a>
+          <a href="#" class="footer__link">
+            <img src="image/footer/instagram.svg" alt="Вконтакте">
+          </a>
+          <a href="#" class="footer__link">
+            <img src="image/footer/youtube.svg" alt="Вконтакте">
+          </a>
+          <a href="#" class="footer__link">
+            <img src="image/footer/facebook.svg" alt="Вконтакте">
+          </a>
+        </div>
+      </div>
+    </footer>
+  </div>
+   <script src="js/bootstrap.min.js"></script>
+   <script src="js/clock.js"></script>
+   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+   <script src="js/main.js"></script>
+   
+</body>
+</html>
